@@ -1,0 +1,373 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#header {
+  width: 100%;
+  background-color: transparent;
+  border-top: 0.003rem gray solid;
+  border-bottom: 0.003rem gray solid;
+  position: fixed;
+  z-index: 2;
+}
+
+.textheading a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #b8b8b8;
+  font-weight: 900;
+}
+
+.textheading a:hover {
+  color: white;
+}
+
+#name {
+  float: left;
+  padding: 1%;
+  font-size: 100%;
+}
+
+#scrollingtext {
+  float: right;
+  padding: 1%;
+  font-size: 100%;
+}
+button{
+  background: transparent;
+  font-family: sans-serif;
+  color: #b8b8b8;
+  font-size: 100%;
+  font-weight: 900;
+  border:0px;
+}
+button:hover{
+  color: white;
+  cursor:pointer;
+}
+.headerimage {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+}
+
+.centerimagecontain {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 0.188rem #b8b8b8 solid;
+  padding: 1%;
+}
+
+.centerimagecontain2 {
+  color: #b8b8b8;
+  position: absolute;
+  top: 34%;
+  font-family: sans-serif;
+  font-weight: 100;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+}
+
+.codewrite h1 {
+  font-size: 2rem;
+  color: lime;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  ;
+  overflow: hidden;
+  border-right: .4rem solid lime;
+  white-space: nowrap;
+  margin: auto;
+  letter-spacing: .4rem;
+  animation:
+    go 3.5s steps(50, end),
+    wait .5s step-end infinite;
+}
+
+@keyframes go {
+  from {
+    width: 0%
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes wait {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: lime
+  }
+}
+
+.body {
+  margin-top: -0.4%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: #3a3838;
+}
+
+.square {
+  float: left;
+  background: #222222;
+  margin: 2.5%;
+  flex: auto;
+  width: 28.33333333%;
+}
+
+body {
+  margin: 0;
+}
+
+.bodyarticletitle {
+  font-family: sans-serif;
+  color: #b8b8b8;
+  font-weight: bold;
+  border-bottom: 0.125rem solid #b8b8b8;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.networkimage {
+  width: 25%;
+  margin: 3.5%;
+  margin-top: 20%;
+}
+
+#aboutmetext {
+  font-size: 100%;
+  color: white;
+  font-family: sans-serif;
+  margin: 5%;
+  letter-spacing: .2rem;
+  line-height: 1.5rem;
+}
+
+.skillimage {
+  width: 25%;
+  margin: 3.5%;
+}
+
+.skillimagej {
+  width: 22%;
+  height: 22%;
+  margin: 3.5%;
+}
+
+.bottom {
+  display: table;
+  margin-top: -2.5%;
+  height: 100%;
+}
+
+#portfolioholder {
+  display: flex;
+  flex-direction: column;
+  background: #222222;
+}
+
+#portfoliotitle {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+#taskholder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.task {
+  flex: auto;
+  width: 30%;
+  height: 10%;
+}
+
+#contactholder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #222222;
+}
+
+#contactholder input {
+  margin: 10.5%;
+  margin-bottom: 0%;
+  margin-top: 1.5%;
+  width: 20%;
+  height: 25px;
+  font-family: sans-serif;
+  padding: 1%;
+  padding-top: 0%;
+  padding-bottom:0%;
+}
+#messages{
+  padding-left: 1%;
+  padding-top: 0%;
+  padding-bottom:0%;
+  font-family: sans-serif;
+  margin: 25.5%;
+  margin-bottom: 0%;
+  margin-top: 2.5%;
+  width: 46%;
+  height: 100px;
+}
+#submit{
+  font-family: sans-serif;
+  margin: 29.5%;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  width: 40%;
+  height: 30px;
+  color: black;
+  background-color: skyblue;
+}
+#submit:hover{
+  background-color: lightslategray;
+  color: white;
+}
+#footercontainer{
+  background-color:#3a3838;
+  color:#b8b8b8;
+}
+.footertext{
+  font-family: sans-serif;
+  margin: 2.55%;
+}
+/*
+  .square2{
+    float: left;
+    background: #222222;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 3.5%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titlebottom{
+    font-family: sans-serif;
+    color: #b8b8b8;
+    font-weight: bold;
+    padding:2%;
+    text-align : center;
+  }
+  
+  .inspoimg{
+    flex: auto;
+    width: 20% ;
+    margin: 2%;
+    float: left;
+    padding: 0 0 20px 20px;
+  }
+  
+  .inspoimgr{
+    flex: auto;
+    width: 20% ;
+    margin: 2%;
+    margin-top: 10%;
+    float: right;
+    padding: 0 0 20px 20px;
+  }
+  
+  .quote{
+    float:left;
+    margin: 2%;
+    color: white;
+    font-size: 500%;
+  }
+  
+  .quotetext{
+    float:left;
+    margin-top: -15%;
+    margin-left: 32%;
+    color: #6e6b6b ;
+    font-size: 400%;
+  }
+  .quotetextr{
+    margin-left: 10%;
+    color: #6e6b6b ;
+    font-size: 400%;
+  }
+  
+  .quote2{
+    float: left;
+    margin-top: -5%;
+    margin-left: 87%;
+    color: white;
+    font-size: 500%;
+  }
+  
+  .quote2r{
+    margin-top: -5%;
+    margin-left: 70%;
+    color: white;
+    font-size: 500%;
+  }
+  
+  .quotename{
+    float: left;
+    margin-top: -10%;
+    margin-left: 65%;
+    color: white;
+    font-size: 200%;
+  }
+  .quotenamer{
+    margin-top: -10%;
+    margin-left: 50%;
+    color: white;
+    font-size: 200%;
+  }
+  */
+/*
+  #contactcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #707070 ;
+  }
+  
+  input{
+    flex:auto;
+    width: 25%;
+    margin: 2.5%;
+    margin-left: 5%;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 20%;
+  }
+  */
+@media (max-width: 1000px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .square {
+    float: none;
+  }
+}
