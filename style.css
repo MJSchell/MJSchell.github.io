@@ -199,13 +199,14 @@ a {
 #taskholder {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+}
+.flexholder{
+  flex:auto;
 }
 
 .task {
-  flex: auto;
-  width: 30%;
-  height: 10%;
+  width: 99%;
+  border: 3px #222222;
 }
 
 #contactholder {
