@@ -207,7 +207,7 @@ a {
 .task {
   width: 95%;
   border: 3px #222222;
-  transition: opacity .3s ease 0s, transform .3s ease 0s;
+  transition: .3s;
 }
 .task:hover{
   z-index: 100;
