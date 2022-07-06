@@ -205,8 +205,13 @@ a {
 }
 
 .task {
-  width: 99%;
+  width: 95%;
   border: 3px #222222;
+  transition: opacity .3s ease 0s, transform .3s ease 0s;
+}
+.task:hover{
+  z-index: 100;
+  transform: scale(1.08);
 }
 
 #contactholder {
@@ -227,6 +232,7 @@ a {
   padding-top: 0%;
   padding-bottom:0%;
 }
+
 #messages{
   padding-left: 1%;
   padding-top: 0%;
