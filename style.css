@@ -38,18 +38,7 @@ html {
   padding: 1%;
   font-size: 100%;
 }
-button{
-  background: transparent;
-  font-family: sans-serif;
-  color: #b8b8b8;
-  font-size: 100%;
-  font-weight: 900;
-  border:0px;
-}
-button:hover{
-  color: white;
-  cursor:pointer;
-}
+
 .headerimage {
   height: 100%;
   width: 100%;
@@ -84,7 +73,6 @@ button:hover{
   font-size: 2rem;
   color: lime;
   font-family: 'Kdam Thmor Pro', sans-serif;
-  ;
   overflow: hidden;
   border-right: .4rem solid lime;
   white-space: nowrap;
@@ -157,7 +145,7 @@ a {
 }
 
 #aboutmetext {
-  font-size: 100%;
+  font-size: 1rem;
   color: white;
   font-family: sans-serif;
   margin: 5%;
@@ -206,7 +194,6 @@ a {
 
 .task {
   width: 95%;
-  border: 3px #222222;
   transition: .3s;
 }
 .task:hover{
@@ -222,7 +209,6 @@ a {
 }
 
 #contactholder input {
-  margin: 13.5%;
   margin-bottom: 0%;
   margin-top: 1.5%;
   width: 10%;
@@ -265,4 +251,78 @@ a {
 .footertext{
   font-family: sans-serif;
   margin: 2.55%;
+}
+#contact1{
+  flex:auto;margin-right: 1%;margin-left:20%;
+}
+#contact2{
+  flex:auto;margin-left: 1%;margin-right: 22%;
+}
+#contact3{
+  flex:auto;margin-right: 1%;margin-left: 20%;
+}
+#contact4{
+  flex:auto;margin-left: 1%;margin-right: 22%;
+}
+
+@media only screen and (max-width: 1010px) {
+  .headerimage{
+    width:100%;
+    height:40%;
+  }
+  .body{
+    flex-direction:column;
+    align-content: center;
+    margin-top: -2.5%;
+  }
+  .bodyarticletitle{
+    font-size: 200%;
+  }
+  .square {
+    float:none;
+    background: #222222;
+    margin: 2.5%;
+    width: 95%;
+    flex:auto;
+  }
+  #header{
+    display: none;
+  }
+  #contactholder input {
+    font-size: 3vw;
+  }
+  #messages{
+    font-size: 3vw;
+    width: 90%;
+    margin: 2.5%;
+  }
+  .centerimagecontain {
+    top: 10%;
+  }
+  
+  .centerimagecontain2 {
+    top: 22%;
+    left: 50%;
+    width: 55%;
+  }
+  .codewrite h1 {
+    font-size: 7vw;
+  }
+  #contactholder{
+    flex-direction: column;
+  }
+  #contactholder input {
+    margin: 2.5%;
+    width: 90%;
+  }
+  #taskholder{
+    flex-direction: column;
+  }
+  .flexholder{
+    margin-left: 4.5%;
+    margin-top: 4.5%;
+  }
+  .centerimagecontain2{
+    color:lime
+  }
 }

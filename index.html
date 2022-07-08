@@ -66,7 +66,7 @@ https://www.w3schools.com/html/html5_semantic_elements.asp
   </div>
   <a style="position:relative;visibility: hidden;top:-100px;" id="itsaboutme"></a>
   <!-- Body Article Thing -->
-  <div class="body" style="flex-direction: row;">
+  <div class="body">
     <!-- Networking -->
     <div class="square">
       <h2 class="bodyarticletitle">Networking</h2>
@@ -88,8 +88,6 @@ https://www.w3schools.com/html/html5_semantic_elements.asp
         been surrounded by technology and computers. I have been playing Video games since before I can remember. I am
         willing to fail in order to learn and succeed.
       </p>
-      <div>
-      </div>
     </div>
     <!-- Skills -->
     <div class="square">
@@ -124,7 +122,7 @@ https://www.w3schools.com/html/html5_semantic_elements.asp
       </p>
     </div>
     <div id="taskholder">
-      <a class="flexholder" style="margin-left: 1%;" target="_blank" href="https://github.com/MJSchell/HTMLCSSJSFiles"><img class="task" src="assets/port1.jpg"></a>
+      <a class="flexholder" target="_blank" href="https://github.com/MJSchell/HTMLCSSJSFiles"><img class="task" src="assets/port1.jpg"></a>
       <a class="flexholder" target="_blank" href="https://github.com/MJSchell/LuaFiles"><img class="task" src="assets/port2.jpg"></a>
       <a class="flexholder" target="_blank" href="https://github.com/MJSchell/PythonFiles"><img class="task" src="assets/pythonp.jpg"></a>
     </div>
@@ -136,10 +134,10 @@ https://www.w3schools.com/html/html5_semantic_elements.asp
     </div>
     <form action="https://formsubmit.co/scheller.mason180@gmail.com" method="POST">
       <div id="contactholder">
-        <input placeholder="PHONE NUMBER" type="tel" name="phone number" style="flex:auto;margin-right: 1%;margin-left:20%;" required>
-        <input placeholder="EMAIL" type="email" name="emailtosubmit" style="flex:auto;margin-left: 1%;margin-right: 22%;" required>
-        <input placeholder="NAME" type="text" name="name" style="flex:auto;margin-right: 1%;margin-left: 20%;" required>
-        <input placeholder="COMPANY NAME" type="text" name="company name" style="flex:auto;margin-left: 1%;margin-right: 22%;" required>
+        <input placeholder="PHONE NUMBER" type="tel" name="phone number" id="contact1" required>
+        <input placeholder="EMAIL" type="email" name="emailtosubmit" id="contact2" required>
+        <input placeholder="NAME" type="text" name="name" id="contact3" required>
+        <input placeholder="COMPANY NAME" type="text" name="company name" id="contact4" required>
       </div>
       <div>
         <input placeholder="MESSAGE" name="message" id="messages" required>
