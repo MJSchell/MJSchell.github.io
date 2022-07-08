@@ -298,12 +298,14 @@ a {
   }
   .centerimagecontain {
     top: 10%;
+    background-color: rgba(1, 1, 1, 0.7);
   }
   
   .centerimagecontain2 {
     top: 22%;
-    left: 50%;
-    width: 55%;
+    white-space: nowrap;
+    background-color: rgba(1, 1, 1, 0.7);
+    font-size: 1.1rem;
   }
   .codewrite h1 {
     font-size: 7vw;
