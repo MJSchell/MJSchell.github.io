@@ -114,11 +114,10 @@ html {
 }
 
 .square {
-  float: left;
   background: #222222;
   margin: 2.5%;
   flex: auto;
-  width: 28.33333333%;
+  width: calc(100%/3);
 }
 
 body {
@@ -138,10 +137,27 @@ a {
   text-decoration: none;
 }
 
+#networkimagecontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .networkimage {
-  width: 25%;
-  margin: 3.5%;
-  margin-top: 20%;
+  margin-top: 50%;
+  width: 10rem;
+  margin-right: 10%;
+}
+#words4networking{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.networkwords{
+  width: 1rem;
+  color: #b8b8b8;
+  font-family: sans-serif;
+  margin-bottom: -200%;
+ flex:auto;
 }
 
 #aboutmetext {
@@ -187,13 +203,11 @@ a {
 #taskholder {
   display: flex;
   flex-direction: row;
-}
-.flexholder{
-  flex:auto;
+  justify-content: space-evenly;
 }
 
 .task {
-  width: 95%;
+  flex:auto;
   transition: .3s;
 }
 .task:hover{
@@ -320,14 +334,17 @@ a {
   #taskholder{
     flex-direction: column;
   }
-  .flexholder{
-    margin-left: 4.5%;
-    margin-top: 4.5%;
-  }
+
   .centerimagecontain2{
     color:lime
   }
   .networkimage {
     margin-top: 2.5%;
+    margin-top: 50%;
+    width: 30vw;
+  }
+  .task{
+    width: 100%;
+    margin-top: 10%;
   }
 }
