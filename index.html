@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<!--
+https://raymond-xie.github.io/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+  
+https://formspree.io/html/
+
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <!--Header Thing -->
+    <div id="header">
+      <strong class="textheading" id="name">
+        <a href="#top">MASON &nbspSCHELLER</a>
+      </strong>
+
+      <strong class="textheading" id="scrollingtext">
+        <a target="_blank"
+          href="assets/pdf.pdf">RÉSUMÉ</a>
+      </strong>
+
+      <strong class="textheading" id="scrollingtext">
+        <a href="#contactholder">CONTACT</a>
+      </strong>
+
+      <strong class="textheading" id="scrollingtext">
+        <a href="#portgoto"> PORTFOLIO </a>
+      </strong>
+
+      <strong class="textheading" id="scrollingtext">
+        <a href="#itsaboutme">ABOUT </a>
+      </strong>
+
+    </div>
+  </header>
+
+  <!-- Header Image Thing -->
+  <div style="height:105%;width:100%;" id="top">
+    <img src="assets/headerb.png" class="headerimage">
+    <div class="centerimagecontain">
+      <div class="codewrite">
+        <h1>Mason Scheller</h1>
+      </div>
+    </div>
+    <div class="centerimagecontain2">
+      Computer Science Student
+  </div>
+  <a style="position:relative;visibility: hidden;top:-100px;" id="itsaboutme"></a>
+  <!-- Body Article Thing -->
+  <div class="body">
+    <!-- Networking -->
+    <div class="square">
+      <h2 class="bodyarticletitle">Networking</h2>
+      <div id="words4networking">
+        <h2 class="networkwords" style="display:inline;">Linkedin</h2>
+        <h2 class="networkwords" style="display:inline;">Rèsumè</h2>
+        <h2 class="networkwords" style="display:inline;">Github</h2>
+      </div>
+      <div id="networkimagecontainer">
+      <a href="https://www.linkedin.com/in/mason-scheller-108248243/" target="_blank">
+        <img class="networkimage" src="assets/linkedin.png">
+      </a>
+      <a href="assets/pdf.pdf" target="_blank">
+        <img class="networkimage" src="assets/email.png">
+      </a>
+      <a href="https://github.com/MJSchell" target="_blank">
+        <img class="networkimage" src="assets/github.png">
+      </a>
+      </div>
+    </div>
+    <!-- About Me -->
+    <div class="square">
+      <h2 class="bodyarticletitle">About Me</h2>
+      <p id="aboutmetext" style="text-align: center;">
+        I am someone who can think logically, strive for greatness, and work well with others. <br><br> I have always
+        been surrounded by technology and computers. I have been playing video games since before I can remember. I am
+        willing to fail to learn and succeed.
+      </p>
+    </div>
+    <!-- Skills -->
+    <div class="square">
+      <h2 class="bodyarticletitle">Skills</h2>
+      <div>
+        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+          <img class="skillimage" src="assets/html.png">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+          <img class="skillimage" src="assets/css3.png">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+          <img class="skillimagej" src="assets/javascript.svg">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">
+          <img class="skillimage" src="assets/python.png">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Lua_(programming_language)" target="_blank">
+          <img class="skillimage" src="assets/lua.png">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code" target="_blank">
+          <img class="skillimage" src="assets/visual-studio-code.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <a style="position:relative;visibility: hidden;top:-50px;" id="portgoto"></a>
+  <div id="portfolioholder">
+    <div>
+      <p id="portfoliotitle">
+        Portfolio
+      </p>
+    </div>
+    <div id="taskholder">
+      <a target="_blank" href="https://github.com/MJSchell/HTMLCSSJSFiles"><img class="task" src="assets/port1.jpg"></a>
+      <a target="_blank" href="https://github.com/MJSchell/LuaFiles"><img class="task" src="assets/port2.jpg"></a>
+      <a target="_blank" href="https://github.com/MJSchell/PythonFiles"><img class="task" src="assets/pythonp.jpg"></a>
+    </div>
+    <!-- Contact -->
+    <div>
+      <p
+        style="margin-top: 2.5%;text-align: center;color: lightgray; font-size:300%;font-family: sans-serif;border-bottom: 5px lightgray solid;margin-left:5.5%;margin-right: 5.5%;">
+        Contact Me</p>
+    </div>
+    <form action="https://formsubmit.co/scheller.mason180@gmail.com" method="POST">
+      <div id="contactholder">
+        <input placeholder="PHONE NUMBER" type="tel" name="phone number" id="contact1" required>
+        <input placeholder="EMAIL" type="email" name="emailtosubmit" id="contact2" required>
+        <input placeholder="NAME" type="text" name="name" id="contact3" required>
+        <input placeholder="COMPANY NAME" type="text" name="company name" id="contact4" required>
+      </div>
+      <div>
+        <input placeholder="MESSAGE" name="message" id="messages" required>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+
+    <!--Footer-->
+    <div id="footercontainer">
+      <div class="footertext" style="float: left;">
+        Copyright © 2022
+      </div>
+      <div class="footertext" style="float: right;">
+        Website By Mason Scheller
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
