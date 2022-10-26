@@ -1,12 +1,24 @@
+/* https://kalynnakano.com/#work */
+/* http://www.ericwadkins.com/ */
+/* https://www.meganlandau.com/portfolio-1 */
+/* http://neilpatelportfolio.com/ */
+/* http://iriskramer.com/ */
+/* https://vinaysomawat.github.io/ */
+/* https://www.seanhalpin.design/ */
+/* https://hype4.com/ */
+/* https://caferati.me/contact */
+/* https://brittanychiang.com/?ref=hackernoon.com */
+/* https://animalmade.com/?ref=hackernoon.com */
+
 /* Elements */
 
-body{
+body {
   margin: 0;
- color: white;
- background-color: black;
+  color: white;
+  background-color: black;
 }
 
-nav{
+nav {
   float: left;
   height: auto;
   width: 5%;
@@ -14,16 +26,16 @@ nav{
   z-index: 1;
 }
 
-nav ul{
+nav ul {
   height: 100vh;
   padding: 0em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
-nav img{
+nav img {
   width: 4em;
   padding: 1em;
 }
@@ -39,21 +51,57 @@ nav img{
   max-height: 1280px;
 }
 
-#homehero{
+#homehero {
   background-image: url("assets/homebackground.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30em;
   width: 100%;
 }
 
-/* Classes */
-
-.floatleft {
-  float: left;
-  margin-right: 4em;
-  margin-bottom: 1em;
+#homemason {
+  display: flex;
+  align-items: center;
+  background-color: #032940;
+  width: 75em;
+  height: 20em;
+  border-radius: 2em;
 }
+
+#titleimg {
+  height: 17em;
+  width: auto;
+  border-radius: 10em;
+  float: left;
+  margin: 5em;
+}
+
+#titleholder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#textdivider{
+  border-color: #ffffff;
+  border-bottom: 1em;
+}
+
+#name {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+}
+
+#job{
+  font-size: 4rem;
+  font-family: 'Raleway', sans-serif;
+  color: #AEB7BC;
+  }
+
+/* Classes */
 
 .onehalf {
   float: left;
