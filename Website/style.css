@@ -1,0 +1,330 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+input,
+textarea {
+    height: 3em;
+    margin-bottom: 0.5em;
+    width: 90%;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+tr:nth-of-type(odd) {
+    background-color: lightblue;
+    color: black;
+}
+
+body {
+    text-align: center;
+    color: darkgray;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: cyan;
+    margin: 0;
+}
+
+div {
+    display: inline-block;
+}
+
+header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 128px;
+    background-color: darkslategray;
+    padding-left: 105px;
+    color: red;
+    text-shadow: 6px 6px blue;
+
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:visited {
+    color: green;
+}
+
+header a:link {
+    color: #b4e611
+}
+
+header a:hover {
+    color: red
+}
+
+h1 {
+    font-size: 2em;
+    display: inline-block;
+}
+
+h2 {
+    text-align: center;
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+
+h3,
+dt {
+    color: darkblue;
+}
+
+h4 {
+    background-color: purple;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    padding-bottom: 0.25em;
+    text-transform: capitalize;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0;
+    clear: left;
+}
+
+nav {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-size: 1.25em;
+    list-style: none;
+}
+
+nav li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+nav a {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: gray;
+}
+
+nav a:visited {
+    color: darkgray;
+}
+
+nav a:hover {
+    color: white;
+}
+
+footer {
+    background-color: #231814;
+    font-size: .60em;
+    text-align: center;
+    padding: 1em;
+    border-top: 2px #8c3826;
+}
+
+main {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 2em;
+    display: block;
+    background-color: darkslategray;
+    color: white;
+}
+
+main h2,
+h3,
+h4,
+p,
+div,
+ul,
+dl {
+    list-style-position: inside;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main ul {
+    padding-left: 2em;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Not in Tutorial */
+dt {
+    font-weight: bold;
+}
+
+/* Class Styles */
+
+.details {
+    overflow: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.item {
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* ID Styles */
+
+#table1 {
+    text-align: center;
+    width: 90%;
+    border-spacing: 0;
+}
+
+#wrapper {
+    background-color: #231814;
+    padding: 0;
+}
+
+#heroapplication {
+    height: 300px;
+    width: 100%;
+    background-image: url("assets/img/appointmenthero.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#homehero {
+    height: 300px;
+    width: 100%;
+    background-image: url("assets/img/walt.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none;
+}
+
+/* Universal Selectors */
+
+* {
+    box-sizing: border-box;
+}
+
+@media(min-width:600px) {
+
+
+    header {
+        background-image: url(assets/img/crystal.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h4 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    #mySubmit {
+        grid-column: 2;
+        width: 9em;
+    }
+
+    #heroapplication {
+        background-image: url("assets/img/appointmenthero.jpg");
+        height: 50vh;
+        width: 100%;
+    }
+
+    #homehero {
+        height: 50vh;
+        width: 100%;
+        background-image: url(assets/img/walt.jpg);
+    }
+
+    #heromenu {
+        height: 50vh;
+        width: 100%;
+        background-image: url(assets/img/menuhero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media(min-width:1024px) {
+    nav ul {
+        flex-direction: row;
+    }
+    header {
+        background-image:none;
+        
+    }
+
+    nav {
+        background-image: url(assets/img/crystallogo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+    }
+}
