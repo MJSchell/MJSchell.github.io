@@ -33,7 +33,7 @@
                 <li>Bed Time Stories</li>
                 <li>Complimentary copy of the Bee Movie</li>
             </ul>
-        
+
             <form>
                 <label for="myName">Name:</label>
                 <input type="text" id="myName" required>
@@ -43,9 +43,12 @@
                 <input type="date" id="myDate" required>
                 <label for="myReason">Reason:</label>
                 <textarea id="myReason" cols="20" rows="2" required></textarea>
-                <a href="thankyou.html">
                 <input type="button" value="Apply Now" id="mySubmit">
-                </a>
+                <script>
+                    function myFunction() {
+                        window.location.href = "thankyou.html";
+                    }
+                </script>
             </form>
         </main>
         <footer>
@@ -62,4 +65,3 @@
 </body>
 
 </html>
-

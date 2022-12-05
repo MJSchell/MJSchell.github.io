@@ -316,9 +316,10 @@ dt {
     nav ul {
         flex-direction: row;
     }
+
     header {
-        background-image:none;
-        
+        background-image: none;
+
     }
 
     nav {
